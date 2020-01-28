@@ -1,0 +1,80 @@
+.widget {
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 20px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.widget-title {
+    background: #ffffff;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    padding: 18px 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #036;
+    display: inline-block;
+    position: relative;
+    /*width: 100%;*/
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+    box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.widget .widget-categories li:first-child {
+    padding-top: 0;
+}
+
+.widget .widget-categories li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.widget .widget-categories li {
+    display: block;
+    padding: 15px 0;
+    border-bottom: 1px dashed #ddd;
+    position: relative;
+}
+
+.widget .widget-categories li a {
+    text-transform: capitalize;
+    color: #036;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.widget .widget-categories li a:hover{
+	color: #FF512F;
+	padding-left: 5px;
+}
+
+@media (max-width: 992px) {
+    h5 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 1200px) {
+    h5 {
+        font-size: 19px;
+        line-height: 28px;
+    }
+}

@@ -1,0 +1,78 @@
+.grid-m{
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+
+/*styling*/
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 1.6rem;
+	line-height: 1.6;
+	font-family: 'Raleway', sans-serif;
+}
+
+.p-all{
+	padding: 5rem 3rem;
+}
+
+@media screen and (min-width: 800px){
+.p-all{
+	padding: 5rem 6rem;
+}
+}
+
+.img{
+	width: 100%;
+	height: auto;
+}
+
+.color-lightgrey{
+	color: #686464;
+}
+
+.color-darkgrey{
+	color: #333333;
+}
+
+.color-pink{
+	color: #EB204A;
+}
+
+.font-bold{
+	font-weight: bold;
+}
+
+.font-20{
+	font-size: 20px;
+}
+
+.font-18{
+	font-size: 18px;
+}
+
+.font-14{
+	font-size: 14px;
+}
+
+a:link,
+a:visited{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+button{
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	padding: 1.5rem 2rem;
+	cursor: pointer;
+}
