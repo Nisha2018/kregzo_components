@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    .wrapper {
+        position: relative;
+    }
+
+    .stepper {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        align-items: center;
+        grid-column-gap: 30px;
+    }
+
+    .stepper .item {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 20px;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        color: #002056;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .stepper::after {
+        content: "";
+        height: 2px;
+        background-color: #d3d4d6;
+        position: absolute;
+        top: 25px;
+        z-index: -1;
+        left: 47px;
+        width: 74%;
+    }
+
+    .ellipse {
+        background-color: #d3d4d6;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+
+    }
+
+    .active {
+        background-color: #f90;
+        animation: ellipse-animation 2.4s cubic-bezier(0, -0.26, 0.32, 1.22) 0s infinite;
+        transform: rotate(0deg);
+    }
+
+    .title-effect-2 {
+        height: 50px;
+        position: relative;
+        width: 50px;
+        margin-bottom: 15px;
+        animation: inherit;
+        opacity: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .title-effect-2 span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: #fff;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .stepper {
+            grid-column-gap: 85px;
+        }
+
+        .stepper::after {
+            left: 149px;
+            width: 59%;
+        }
+    }
+
+
+    @media screen and (min-width: 991px) {
+        .stepper {
+            grid-column-gap: 150px;
+        }
+
+        .stepper::after {
+            top: 25px;
+            left: 345px;
+            width: 52%;
+        }
+
+        .stepper .item{
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="stepper">
+            <div class="item">
+                <div class="title-effect title-effect-2">
+                    <div class="ellipse active"></div>
+                    <span>1</span>
+                </div>
+                <div><span>Basic Info</span></div>
+            </div>
+            <div class="item">
+                <div class="title-effect title-effect-2">
+                    <div class="ellipse"></div>
+                    <span>2</span>
+                </div>
+                <div><span>Profile</span></div>
+            </div>
+            <div class="item">
+                <div class="title-effect title-effect-2">
+                    <div class="ellipse"></div>
+                    <span>3</span>
+                </div>
+                <div><span>Interests</span></div>
+            </div>
+            <div class="item">
+                <div class="title-effect title-effect-2">
+                    <div class="ellipse"></div>
+                    <span>4</span>
+                </div>
+                <div><span>Done</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -5,7 +5,7 @@ body {
 .post {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     position: relative;
     border-radius: 7px;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
@@ -22,34 +22,6 @@ body {
     letter-spacing: 1px;
 }
 
-.post .post-image {
-    overflow: hidden;
-    position: relative;
-}
-
-.h-100 {
-    height: 100% !important;
-}
-
-.w-100 {
-    width: 100% !important;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-img {
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-    vertical-align: middle;
-    border-style: none;
-}
-
 .post .post-image::before {
     background-color: #FF512F;
     content: "";
@@ -58,19 +30,6 @@ img {
     left: 0;
     position: absolute;
     top: 0;
-    transition: all 600ms ease 0s;
-    width: 0;
-    opacity: 0.7;
-}
-
-.post .post-image::after {
-    background-color: #FF512F;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 50%;
-    position: absolute;
-    right: 0;
     transition: all 600ms ease 0s;
     width: 0;
     opacity: 0.7;
@@ -107,6 +66,10 @@ img {
     list-style: none;
 }
 
+.post-meta{
+    padding-top: 20px;
+}
+
 .post-meta ul li {
     font-size: 14px;
     font-weight: normal;
@@ -120,6 +83,7 @@ img {
 .post-meta ul li i {
     color: #f90;
     padding-right: 5px;
+
 }
 
 .post-title {
@@ -157,6 +121,7 @@ img {
     text-transform: capitalize;
     font-weight: bold;
     color: #1c1d3e;
+    font-size: 22px;
 }
 
 .post .post-desc p {
@@ -186,17 +151,14 @@ img {
 
 .post:hover{border-radius: 15px;}
 
-.post:hover .post-image::before, .post:hover .post-image::after {width: 100%;}
+/*.post:hover .post-image::before, .post:hover .post-image::after {width: 100%;}*/
 .post:hover .post-categories {background: #1c1d3e;}
+/*.post.style-2:hover .post-categories {background: #ffffff; color: #2575fc}*/
 .post-categories:hover{color: #f90;}
 
 .icon-btn:hover{
 	background: #f90;
 	color: #fff; 
-}
-
-.post .post-desc h4 {
-    font-size: 20px;
 }
 
 .post .post-desc h4 a{
@@ -212,7 +174,7 @@ img {
     margin: 5px 5px 15px 0;
 }
 
-.widget-tags li a {
+.widget-tags li a,.post-meta a {
     background: #fafaff;
     border-radius: 5px;
     color: #036;
@@ -222,17 +184,34 @@ img {
     font-weight: normal;
 }
 
+.post-meta ul{
+    padding-top: 10px;
+}
+
+.post-meta a{
+    background: #ff9900;
+    color: #fff;
+    padding: 6px 8px;
+    font-size: 13px;
+}
+
 a{
 	text-decoration: none;
 }
 
+@media (max-width: 576px) {
+    h4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
 
 @media (max-width: 992px) {
     .post-meta ul li {
         font-size: 14px;
     }
 
-    .post .post-desc h4 {
+    h4 {
         font-size: 20px;
         line-height: 26px;
     }
@@ -244,7 +223,6 @@ a{
     }
 }    
 
-
 @media (max-width: 1200px) {
     .post-meta ul li {
         font-size: 12px;
@@ -254,6 +232,11 @@ a{
     .post .post-desc {
     padding: 20px 20px 30px;
 	}
+
+    h4 {
+        font-size: 22px;
+        line-height: 30px;
+    }
 
     .post-title::before {
         left: -20px;
