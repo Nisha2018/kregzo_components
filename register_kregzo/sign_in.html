@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!--  <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    .sign-in {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 20px;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .sign-in .title {
+        text-align: center;
+        color: #002056;
+        font-size: 25px;
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    .img-container {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+    }
+
+    .img-container img {
+        width: 300px;
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .title-effect {
+        left: 50%;
+        margin-left: -25px;
+        top: -5px;
+    }
+
+    .title-effect .bar {
+        background-color: #F90;
+    }
+
+    .sign-in .separator {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: #f90;
+
+    }
+
+    .sign-in .separator span {
+        position: relative;
+    }
+
+    .sign-in .separator span::before {
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background: #f09819;
+        top: 50%;
+        left: -109px;
+
+    }
+
+    .sign-in .separator span::after{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 3px;
+        background: #f09819;
+        top: 50%;
+        left: 50px;
+    }
+
+
+    @media (min-width: 768px) {
+        .img-container {
+            grid-template-rows: auto;
+            grid-template-columns: auto auto;
+            grid-column-gap: 10px;
+            justify-content: center;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="sign-in">
+        <div class="title">
+            <div class="title-effect">
+                <div class="bar bar-top"></div>
+                <div class="bar bar-right"></div>
+                <div class="bar bar-bottom"></div>
+                <div class="bar bar-left"></div>
+            </div>
+            <span>Get Started with</span>
+        </div>
+        <div class="img-container">
+            <div><img src="../images/facebook.png"></div>
+            <div><img src="../images/linkedin.png"></div>
+        </div>
+        <div class="separator">
+            <span>OR</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .confirm_box{
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 5fr 1fr;
+            padding: 14px 20px;
+            align-items: center;
+            margin: auto;
+            border-radius: 7px;
+            -webkit-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+            -moz-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+            box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+        }
+
+        .confirm_box .close{
+            grid-column: 2;
+            grid-row: 1;
+            justify-self: end;
+        }
+
+        .close label{
+            font-size: 30px;
+            cursor: pointer;
+            color: #002056;
+        }
+
+         .close label:hover{
+            color: #f90;
+         }
+
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        .confirm_box .box{
+            color: #002056;
+        }
+
+        .box span a{
+            color: #f90;
+            text-decoration: none;
+        }
+
+        #close:checked ~ .confirm_box{
+            display: none;
+        }
+
+        @media (min-width: 991px){
+           .confirm_box{
+             padding: 8px 20px;
+             width: 60%;
+           } 
+        }
+
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="close">
+    <div class="confirm_box">
+        <div class="close">
+            <label for="close">&times;</label>
+        </div>
+        <div class="box">
+            <span>We sent an email to test@gmail.com, please verify your email address. <a href="https://kregzo.com/account/activate-resend">Resend Email</a></span>
+        </div>
+    </div>
+</body>
+
+</html>
