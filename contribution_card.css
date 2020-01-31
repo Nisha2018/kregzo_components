@@ -2,39 +2,6 @@ body {
     padding: 20px;
 }
 
-.post {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    position: relative;
-    border-radius: 7px;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-    box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-    transition: all 0.5s ease-in-out 0s;
-    font-family: 'Heebo', sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 15px;
-    text-align: left;
-    line-height: 1.5;
-    color: #5f5f5f;
-    letter-spacing: 1px;
-}
-
-.post .post-image::before {
-    background-color: #FF512F;
-    content: "";
-    display: block;
-    height: 50%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: all 600ms ease 0s;
-    width: 0;
-    opacity: 0.7;
-}
-
 .post .post-categories {
     background-color: #f90;
     display: inline-block;
@@ -53,132 +20,14 @@ body {
 
 .post .post-desc {
     padding: 30px;
-    background: #ffffff;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    -ms-transition: all 0.5s ease-in-out 0s;
-    -o-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
-}
-
-.list-inline {
-    padding-left: 0;
-    list-style: none;
 }
 
 .post-meta{
     padding-top: 20px;
 }
 
-.post-meta ul li {
-    font-size: 14px;
-    font-weight: normal;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 10px 0 0;
-    list-style-type: none;
-    position: relative;
-}
-
-.post-meta ul li i {
-    color: #f90;
-    padding-right: 5px;
-
-}
-
-.post-title {
-    position: relative;
-    padding-top: 20px;
-    margin-top: 20px;
-}
-
-.post-title:before,
-.post-title:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    height: 3px;
-    border-radius: 2px;
-    top: 0;
-    background-color: #f09819;
-}
-
-.post-title:after{
-   left: 156px; 
-}
-
-.post-title:after {
-    width: 20px;
-    background-color: #FF512F;
-}
-
-.post-title:before {
-    width: 150px;
-}
-
-.post .post-desc h4 {
-    margin: 0;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: #1c1d3e;
-    font-size: 22px;
-}
-
-.post .post-desc p {
-    margin: 15px 0;
-    font-size: 14px;
-    color: #828893;
-    line-height: 1.7;
-}
-
-.icon-btn {
-    background: #ffffff;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    color: #f90;
-    padding: 0;
-    text-align: center;
-    line-height: 50px;
-    position: absolute;
-    left: 50%;
-    bottom: -25px;
-    margin-left: -25px;
-    webkit-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
-    box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
-}
-
-.post:hover{border-radius: 15px;}
-
-/*.post:hover .post-image::before, .post:hover .post-image::after {width: 100%;}*/
-.post:hover .post-categories {background: #1c1d3e;}
-/*.post.style-2:hover .post-categories {background: #ffffff; color: #2575fc}*/
-.post-categories:hover{color: #f90;}
-
-.icon-btn:hover{
-	background: #f90;
-	color: #fff; 
-}
-
-.post .post-desc h4 a{
-	color: #036;
-}
-
-.post .post-desc h4 a:hover{
-	color: #f90;
-}
-
-.widget-tags li {
-    display: inline-block;
-    margin: 5px 5px 15px 0;
-}
-
-.widget-tags li a,.post-meta a {
-    background: #fafaff;
+.post-meta a {
     border-radius: 5px;
-    color: #036;
-    padding: 8px 15px;
     display: inline-block;
     text-align: center;
     font-weight: normal;
@@ -195,39 +44,14 @@ body {
     font-size: 13px;
 }
 
-a{
-	text-decoration: none;
-}
-
 @media (max-width: 576px) {
     h4 {
         font-size: 18px;
         line-height: 26px;
     }
 }
-
-@media (max-width: 992px) {
-    .post-meta ul li {
-        font-size: 14px;
-    }
-
-    h4 {
-        font-size: 20px;
-        line-height: 26px;
-    }
-}
-
-@media (max-width: 576px) {
-    .post .post-desc h4 {
-        font-size: 18px;
-    }
-}    
 
 @media (max-width: 1200px) {
-    .post-meta ul li {
-        font-size: 12px;
-        margin: 0 10px 0 0;
-    }
 
     .post .post-desc {
     padding: 20px 20px 30px;
@@ -238,11 +62,4 @@ a{
         line-height: 30px;
     }
 
-    .post-title::before {
-        left: -20px;
-    }
-
-    .post-title::after {
-        left: 140px;
-    }
 }

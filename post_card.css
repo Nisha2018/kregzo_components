@@ -159,11 +159,19 @@ img {
     color: #1c1d3e;
 }
 
-.post .post-desc p {
+.post .post-desc p,.media-body .text {
     margin: 15px 0;
     font-size: 14px;
     color: #828893;
     line-height: 1.7;
+}
+
+.media-body .text{
+    margin: 0;
+}
+
+.media-holder .media{
+    padding-top: 20px;
 }
 
 .icon-btn {
@@ -210,7 +218,8 @@ img {
     font-size: 20px;
 }
 
-.post .post-desc h4 a {
+.post .post-desc h4 a,
+.section-title h2 {
     color: #036;
 }
 
@@ -259,9 +268,8 @@ a {
 
 .comments p.title {
     color: #036;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .comments .form-control {
@@ -274,14 +282,47 @@ a {
     padding-bottom: 60px;
 }
 
+.section-title h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-title {
+    margin-bottom: 0;
+}
+
+.media-holder {
+    padding-top: 30px;
+}
+
+.comment-date {
+    color: #f90;
+    font-size: 10px;
+}
+
+.comment-date .time{
+    padding-left: 30px;
+}
+
+.media-body .name {
+    color: #003366;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.media-holder .media img {
+    width: 80px;
+    }
+
 @media (min-width: 991px) {
     .comments .form-control {
         width: 60%;
     }
 }
-
-
-
 
 @media (max-width: 992px) {
     .post-meta ul li {
@@ -297,6 +338,11 @@ a {
 @media (max-width: 576px) {
     .post .post-desc h4 {
         font-size: 18px;
+    }
+
+    .media-holder .media {
+        display: block;
+        padding: 20px 10px;
     }
 }
 
