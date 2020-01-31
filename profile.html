@@ -13,67 +13,108 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <style>
-    /*.profile {
-        display: grid;
-        grid-template-rows: auto auto auto;
-        grid-row-gap: 15px;
-    }*/
+    .profile {
 
-    .testimonial .testimonial-caption h5 {
-        color: #f90;
-    }
-
-    .testimonial-caption::before {
-        background-color: #f09819;
-    }
-
-    .testimonial-caption::after {
-        background-color: #FF512F;
-    }
-
-    .testimonial.style-2 .testimonial-img:before,.testimonial.style-2 .testimonial-img:after {
-        left: -8%;
-        top: -10%;
-    }
-
-    .testimonial {
-        -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-        -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-    }
-
-    .testimonial.style-2 .testimonial-img:before,
-    .testimonial.style-2 .testimonial-img:after {
-        border-color: #f90;
+        padding: 20px;
     }
 
     img {
         vertical-align: middle;
         border-style: none;
     }
+
+    .testimonial.style-2 {
+        padding: 40px 0 0 0;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        border-radius: 7px;
+    }
+
+    .widget .widget-tags li a {
+        font-size: 14px;
+        padding: 6px 18px;
+    }
+
+    .testimonial.style-2 .testimonial-img:before,
+    .testimonial.style-2 .testimonial-img:after {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+    .testimonial-caption::before {
+        background-color: #003366;
+    }
+
+    .testimonial-caption::after {
+        background-color: #F90;
+    }
+
+    .testimonial .testimonial-caption h5 {
+        color: #f90;
+    }
+
+    .testimonial .testimonial-caption label {
+        color: #003366;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 10px;
+    }
+
+    .btn.btn-theme {
+        background: linear-gradient(90deg, rgb(255, 81, 47) 0%, rgb(240, 152, 25) 80%);
+        cursor: pointer;
+    }
+
+    .widget-tags li a {
+        font-family: 'Heebo', sans-serif;
+        text-decoration: none;
+    }
+
+    .widget .widget-tags li a:hover {
+        background: #003366;
+    }
+
+    .testimonial.style-2 .testimonial-content {
+        margin-top: 0;
+        padding: 10px 20px 30px;
+    }
+
+
     </style>
 </head>
 
 <body>
-    <!-- <div class="profile">
-        <div class="profile-img"></div>
-        <div class="info"></div>
-        <div class="buttons"></div>
-    </div> -->
-    <div class="testimonial style-2">
-        <div class="testimonial-img">
-            <img class="img-center zoom-fade" src="images/profile.jpg" alt="">
-        </div>
-        <div class="testimonial-content">
-            <div class="testimonial-quote"><i class="la la-quote-left"></i>
+    <div class="profile">
+        <div class="testimonial style-2">
+            <div class="testimonial-img">
+                <img class="img-center" src="images/profile.jpg" alt="">
             </div>
-            <div class="content">
-                <div class="widget"></div>
-
-            </div>
-            <div class="testimonial-caption">
-                <h5>Bob Kohli</h5>
-                <label>Kregzo</label>
+            <div class="testimonial-content">
+                <div class="testimonial-caption">
+                    <h5>Lana Roadse</h5>
+                    <label>CEO of Softino</label>
+                </div>
+                <div class="widget">
+                    <ul class="widget-tags list-inline">
+                        <li> <a href="#">Mentor</a>
+                        </li>
+                        <li> <a href="#">Investor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <div><button class="btn btn-theme mt-5" data-text="Post Contribution"><span>P</span><span>o</span><span>s</span><span>t</span>
+                            <span> </span><span>C</span><span>o</span><span>n</span><span>t</span><span>r</span><span>i</span><span>b</span><span>u</span><span>t</span><span>i</span><span>o</span><span>n</span>
+                        </button></div>
+                    <div><button class="btn btn-theme mt-5" data-text="Write a Post"><span>W</span><span>r</span><span>i</span><span>t</span>
+                            <span>e </span><span>a</span><span>P</span><span>o</span><span>s</span><span>t</span>
+                        </button></div>
+                </div>
             </div>
         </div>
     </div>
