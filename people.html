@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    .people {
+        padding: 20px;
+    }
+
+    .event {
+        transition: all 0.5s linear;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        font-family: 'Heebo', sans-serif;
+    }
+
+    figure {
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .people figure img {
+        width: 100%;
+        height: auto;
+        transition: all 0.5s linear;
+        vertical-align: bottom;
+    }
+
+    figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #fff;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        align-content: center;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 45px;
+        opacity: 0;
+        transition: all 1s linear;
+    }
+
+    .info {
+        padding: 30px;
+        text-align: center;
+        color: #003366;
+        font-weight: bold;
+        border-radius: 0 0 10px 10px;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 10px;
+    }
+
+    figure:hover img,
+    .event:hover img {
+        transform: scale(1.2);
+    }
+
+    figure:hover figcaption,
+    .event:hover figcaption {
+        opacity: 1;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .event .info:hover {
+        cursor: pointer;
+    }
+
+    .info .profile {
+        color: #036;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .info .name {
+        font-size: 18px;
+        color: #f90;
+        font-weight: 500;
+        font-family: 'Cabin', sans-serif;
+    }
+
+    figcaption .btn {
+        background: #f90;
+        color: #fff;
+        padding: 15px 25px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    figcaption .btn:hover {
+        background: #036;
+    }
+
+    figcaption .follower {
+        font-size: 16 px;
+    }
+
+    figcaption .btn i {
+        padding-right: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="people">
+        <div class="event">
+            <figure>
+                <img src="images/person1.jpg">
+                <figcaption>
+                    <div>
+                        <a href="" class="btn"><i class="fas fa-check"></i>Follow</a>
+                    </div>
+                    <div class="follower">
+                        <p>2 followers</p>
+                    </div>
+                </figcaption>
+            </figure>
+            <div class="info">
+                <p class="profile">Student</p>
+                <p class="name">Omair Khaja Moinuddin</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

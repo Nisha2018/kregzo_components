@@ -35,7 +35,7 @@ input[type="radio"] {
 
 .wrapper .tabs .tab label p{
 	color: #003366;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     font-family: 'Cabin', sans-serif;
@@ -61,15 +61,15 @@ input[type="radio"] {
 }
 
 .wrapper .tabs .tab label i::after{
+    content: "";
+    position: absolute;
 	background-color: #f90;
 	border-radius: 100%;
     box-sizing: border-box;
-    content: "";
     display: block;
     height: 100%;
     left: 0;
     margin: 0 auto;
-    position: absolute;
     right: 0;
     top: 0;
     transition: all 0.2s ease-in-out 0s;
@@ -79,15 +79,21 @@ input[type="radio"] {
 
 }
 
-.wrapper .tabs .tab label:hover i::after{
+.wrapper .tabs .tab label:hover i::after,#tab1:checked ~ .tabs .tab label[for="tab1"] i::after,
+#tab2:checked ~ .tabs .tab label[for="tab2"] i::after,
+#tab3:checked ~ .tabs .tab label[for="tab3"] i::after{
 	transform: scale(1);
 }
 
-.wrapper .tabs .tab label:hover i{
+.wrapper .tabs .tab label:hover i,#tab1:checked ~ .tabs .tab label[for="tab1"] i,
+#tab2:checked ~ .tabs .tab label[for="tab2"] i,
+#tab3:checked ~ .tabs .tab label[for="tab3"] i{
 	color: #fff;
 }
 
-.wrapper .tabs .tab label:hover p{
+.wrapper .tabs .tab label:hover p,#tab1:checked ~ .tabs .tab label[for="tab1"] p,
+#tab2:checked ~ .tabs .tab label[for="tab2"] p,
+#tab3:checked ~ .tabs .tab label[for="tab3"] p{
 	color: #f90;
 	margin: 0.3em 0;
 }

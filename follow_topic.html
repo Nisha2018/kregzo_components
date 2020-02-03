@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <style>
+    .follow {
+        padding: 20px;
+    }
+
+    .testimonial.style-1:before {
+        background: #f90;
+    }
+
+    .testimonial.style-1 .testimonial-content::before {
+        position: static;
+    }
+
+    .testimonial-caption::before {
+        background-color: #f09819;
+    }
+
+    .testimonial-caption::after {
+        background-color: #FF512F;
+    }
+
+    .testimonial-content .title {
+        color: #036;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    .follow .btn {
+        background: #036;
+        color: #fff;
+        padding: 10px 18px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .testimonial{
+        position: relative;
+    }
+
+    .testimonial:after {
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        width: 100%;
+        z-index: -1;
+        background: url(../images/follow.png) no-repeat 0 0;
+        background-size: cover;
+    }
+
+    .testimonial:hover:after {
+        opacity: 0.2;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="follow">
+        <div class="testimonial style-1">
+            <div class="testimonial-content">
+                <div class="title">
+                    <span>Edutech</span>
+                </div>
+                <div class="testimonial-caption">
+                </div>
+                <div>
+                    <div><a href="" class="btn"><i class="fas fa-check"></i>Follow</a></div>
+                </div>
+                <div><span>No Followers</span></div>
+                <div>
+                    <span>Not Interested</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

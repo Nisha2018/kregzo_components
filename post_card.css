@@ -140,7 +140,7 @@ img {
 }
 
 .post-title:after {
-    left: 156px;
+    left: 130px;
 }
 
 .post-title:after {
@@ -315,7 +315,7 @@ a {
 }
 
 .media-holder .media img {
-    width: 80px;
+    width: 60px;
     }
 
 @media (min-width: 991px) {

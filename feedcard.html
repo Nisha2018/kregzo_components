@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="post_card.css">
+    <link rel="stylesheet" href="contribution_card.css">
+    <style>
+        input[type="checkbox"]{
+            display: none;
+        }
+
+        .post-desc .text label[for="toggle"]{
+            color: #f90;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .post .post-desc .text p{
+            margin-bottom: 0;
+        }
+
+        .post .post-desc .sub-title p{
+            color: #036;
+        }
+
+        .hide{
+            opacity: 0;
+            max-height: 0;
+            font-size: 0;
+            transition: 0.1s ease;
+        }
+
+        #toggle:checked ~ .show .hide{
+            opacity: 1;
+            font-size: inherit;
+            max-height: 999em;
+        }
+
+        #toggle:checked ~ .show .ellipsis{
+            display: none;
+        }
+
+        #toggle ~ .read-more-trigger:before{
+            content: "Read More";
+        }
+
+        #toggle:checked ~ .read-more-trigger:before{
+            content: "Read Less";
+        } 
+
+        .post .title a{
+            font-size: 22px;
+        color: #036;
+        font-weight: bold;
+        }
+
+        .post-desc .img-container{
+            width: 50px;
+            height: 50px;
+            background: #e5dede;
+            border-radius: 50%;
+        }
+
+        .time i{
+            color: #f90;
+        }
+
+        .post .post-desc .time p{
+            margin: 0;
+            padding-bottom: 12px;
+        }
+
+        .post-desc .head{
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-column-gap: 15px;
+            align-items: center;
+        }
+
+        .post-title{
+            padding: 0;
+            margin: 0;
+        }
+
+        .post-desc .like-btn{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 20px;
+            justify-content: start;
+            padding-top: 10px;
+        }
+
+        label[for="like"]{
+            color: #bbb6b6;
+            position: relative;
+            cursor: pointer;
+        }
+
+        #like:checked ~ label[for="like"]{
+            color: red;
+        }
+
+        .post-title{
+            margin-left: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="post">
+        <div class="post-desc">
+            <div class="head">
+                <div class="img-container">
+                    <img src="">
+                </div>
+                <div class="title">
+                    <a href="#">
+                        Member
+                    </a>
+                </div>
+            </div>
+            <div class="sub-title">
+                <p>Enhance the support provided by the Caretaker of timer's patient</p>
+            </div>
+            <div class="time">
+                <p><i class="far fa-clock"></i> a year ago</p>
+            </div>
+            <div class="post-title"></div>
+            <div class="text">
+                <input type="checkbox" name="toggle" id="toggle">
+                <p class="show">Member is a healthcare initiative consisting of three main products: 1. A smart wearable to assist dementia patients in carrying out everyday tasks a<span class="ellipsis">...</span>
+                    <span class="hide">and have fun while they do it together with family and friends. We give you everything required for amazingly fun experiences at a fraction of the cost of ownership while reducing dependence on wasteful things you do not need regularly.</span>
+                </p>
+                <label for="toggle" class="read-more-trigger"></label>
+                <div class="like-btn">
+                    <div>
+                        <span><i class="fas fa-dollar-sign"></i> Interested to buy the product?</span>
+                    </div>
+                    <input type="checkbox" name="like" id="like">
+                    <label for="like"><i class="fas fa-heart"></i><span>4</span>
+                </div></label>
+            </div>
+            <div class="media-holder mt-5">
+                <div class="section-title mb-4">
+                    <h2 class="title">All Comments<span>(0)</span></h2>
+                </div>
+                <div class="media">
+                    <img class="img-center mr-3" alt="image" src="images/comment.png">
+                    <div class="media-body">
+                        <span class="name">Romi kelly</span>
+                        <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
+                        <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="comments">
+                <p class="title">Leave a comment</p>
+                <form method="post" action="">
+                    <input type="text" name="comment" class="form-control" placeholder="Enter your comment..." required="required">
+                    <button class="btn btn-theme mt-5" data-text="Post Comment"><span>P</span><span>o</span><span>s</span><span>t</span>
+                        <span> </span><span>C</span><span>o</span><span>m</span><span>m</span><span>e</span><span>n</span><span>t</span>
+                    </button>
+                </form>
+            </div>
+            <a class="icon-btn mt-4" href="#"> <i class="fas fa-angle-right"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
