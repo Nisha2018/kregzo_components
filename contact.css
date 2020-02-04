@@ -1,50 +1,65 @@
-.wrapper,.wrapper .content{
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-row-gap: 30px;
+.wrapper,
+.wrapper .content {
+    display: grid;
+    grid-template-rows: auto auto;
 }
 
-.wrapper{
-	position: relative;
-	overflow: hidden;
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    grid-row-gap: 30px;
 }
 
-.wrapper .content .contact-info,.wrapper .content .contact-info .contact-media{
-	display: grid;
-	grid-template-rows: auto auto auto;
-	grid-row-gap: 20px;
+.bg-animation {
+    z-index: -1;
 }
 
-.wrapper .content .contact-info .contact-media{
-	grid-row-gap: 0px;
+.wrapper .content .contact-info {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 20px;
 }
 
-.wrapper .head{
-	position: relative;
+.wrapper .content .contact-info .contact-media {
+    grid-template-rows: auto 1fr 2fr;
 }
 
-.title-effect-2 .ellipse{
-	background: #f90;
+.wrapper .content .contact-info .contact-media {
+    grid-row-gap: 0px;
+}
+
+.wrapper .head {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+}
+
+.title-effect-2 .ellipse {
+    background: #f90;
 }
 
 .title-effect-2 {
-	margin: 20px auto;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .la-info:before {
     content: "\f24a";
 }
 
-.contact-media i{
-	color: #f90;
+.contact-media i {
+    color: #f90;
+    font-size: 60px;
 }
 
-.contact-media{
-	border-bottom: 3px solid #f90;
+.contact-media {
+    border-bottom: 3px solid #f90;
 }
 
-.contact-media span{
-	color: #036;
+.contact-media span {
+    color: #036;
 }
 
 .contact-media a {
@@ -53,13 +68,33 @@
     text-decoration: none;
 }
 
+@media (min-width: 768px) {
+    .wrapper .content .contact-info {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 25px;
+        padding: 40px 60px;
+    }
 
-@media (min-width: 991px){
-	.wrapper .content .contact-info{
-		grid-template-rows: auto;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-column-gap: 35px;
-		padding: 60px;
-	}
+    .wrapper {
+        grid-row-gap: 0px;
+    }
+
+    .contact-media.last{
+    	grid-column: span 2;
+    }
 }
 
+
+@media (min-width: 991px) {
+    .wrapper .content .contact-info {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 35px;
+    }
+
+    .contact-media.last{
+    	grid-column: 3;
+    }
+
+}
