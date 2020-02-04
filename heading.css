@@ -1,0 +1,26 @@
+body{
+	font-family: 'Heebo', sans-serif;
+}
+
+.main-heading,.heading-2{
+	font-size: 40px;
+	font-weight: 600;
+	font-family: 'Cabin', sans-serif;
+	color: #036;
+	text-align: center;
+}
+
+.heading-2{
+	font-size: 24px;
+	text-align: left;
+}
+
+.p-all{
+	padding: 40px 20px;
+}
+
+@media screen and (min-width: 800px){
+.p-all{
+	padding: 50px 60px;
+}
+}

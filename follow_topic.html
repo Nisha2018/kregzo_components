@@ -10,6 +10,7 @@
     <link href="css/all.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -41,18 +42,42 @@
         text-transform: uppercase;
     }
 
+    .testimonial-content .info {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-column-gap: 20px;
+    }
+
+
+
     .follow .btn {
         background: #036;
         color: #fff;
-        padding: 10px 18px;
+        padding: 10px 10px;
         text-decoration: none;
         letter-spacing: 2px;
         border-radius: 7px;
         cursor: pointer;
+        font-size: 14px;
     }
 
-    .testimonial{
+    .follow .btn i {
+        padding-right: 5px;
+    }
+
+    .testimonial {
         position: relative;
+        text-align: center;
+        overflow: hidden;
+        z-index: 9;
+        transition: all 0.5s ease-in-out 0s;
+    }
+
+    .testimonial-content .lead {
+        font-size: 15px;
+        font-weight: 500;
+        text-align: center;
     }
 
     .testimonial:after {
@@ -65,12 +90,41 @@
         opacity: 0;
         width: 100%;
         z-index: -1;
-        background: url(../images/follow.png) no-repeat 0 0;
+        background: url(images/follow.png) no-repeat 0 0;
         background-size: cover;
+        animation-name: zoom-fade;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        -webkit-animation-name: zoom-fade;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
     }
 
     .testimonial:hover:after {
         opacity: 0.2;
+        z-index: 11;
+    }
+
+    .testimonial-caption:before {
+        width: 135px;
+        left: -80px;
+    }
+
+    .testimonial-caption:after {
+        left: 62px;
+    }
+
+    @media (max-width: 767px) {
+        .testimonial.style-1 .testimonial-content {
+            padding: 20px;
+            margin-right: 10px;
+        }
+
+        .testimonial-content .info {
+            grid-column-gap: 10px;
+        }
     }
     </style>
 </head>
@@ -84,11 +138,11 @@
                 </div>
                 <div class="testimonial-caption">
                 </div>
-                <div>
+                <div class="info">
                     <div><a href="" class="btn"><i class="fas fa-check"></i>Follow</a></div>
+                    <div class="lead"><span>No Followers</span></div>
                 </div>
-                <div><span>No Followers</span></div>
-                <div>
+                <div class="lead" style="padding-top: 10px;">
                     <span>Not Interested</span>
                 </div>
             </div>

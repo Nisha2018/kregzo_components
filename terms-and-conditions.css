@@ -1,0 +1,55 @@
+
+.bg-animation{
+	z-index: -1;
+}
+
+.static-wrapper section blockquote {
+    background-color: #ffebcc;
+    padding: 2rem;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    color: #663d00;
+    line-height: 1.7;
+    border-radius: 1rem;
+}
+
+.card{
+	padding: 0 40px;
+}
+
+.card section{
+	padding-bottom: 20px;
+}
+
+.card section p{
+	padding-bottom: 20px;
+	line-height: 1.5;
+}
+
+.card section a{
+	color: #f90;
+    text-decoration: none;
+}
+
+.card section a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.card section ul,.card section ol{
+	padding-left: 40px;
+}
+
+.card section ul li,.card section ol li{
+	list-style-type: circle;
+	padding-bottom: 10px;
+	line-height: 1.4;
+}
+
+.card section strong{
+	font-weight: 600;
+}
+
+.card section ol li{
+	list-style: decimal;
+}
