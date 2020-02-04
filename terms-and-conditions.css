@@ -13,10 +13,6 @@
     border-radius: 1rem;
 }
 
-.card{
-	padding: 0 40px;
-}
-
 .card section{
 	padding-bottom: 20px;
 }
@@ -52,4 +48,10 @@
 
 .card section ol li{
 	list-style: decimal;
+}
+
+@media (min-width: 991px){
+	.card{
+	padding: 0 40px;
+}
 }
