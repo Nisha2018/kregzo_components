@@ -2,12 +2,18 @@ body{
 	font-family: 'Heebo', sans-serif;
 }
 
-.main-heading,.heading-2{
+.main-heading,.heading-2,.heading-1{
 	font-size: 40px;
 	font-weight: 600;
-	font-family: 'Cabin', sans-serif;
+	/*font-family: 'Cabin', sans-serif;*/
+	font-family: 'Nunito', sans-serif;
 	color: #036;
 	text-align: center;
+}
+
+.heading-1{
+	font-size: 30px;
+	text-align: left;
 }
 
 .heading-2{

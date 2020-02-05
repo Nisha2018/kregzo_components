@@ -1,5 +1,5 @@
 .wrapper,
-.wrapper .content {
+.wrapper .content,.content .form-area,.form-area .form {
     display: grid;
     grid-template-rows: auto auto;
 }
@@ -28,7 +28,7 @@
     grid-row-gap: 0px;
 }
 
-.wrapper .head {
+.wrapper.contact .head,.wrapper.career .head {
     position: relative;
     display: grid;
     justify-content: center;
@@ -36,13 +36,29 @@
     grid-column-gap: 20px;
 }
 
+.wrapper .head{
+	display: grid;
+    justify-content: center;
+     grid-template-rows: auto auto; 
+    grid-row-gap: 20px;
+}
+
+.wrapper .content,.content .form-area{
+	grid-row-gap: 60px;
+}
+
 .title-effect-2 .ellipse {
     background: #f90;
 }
 
-.title-effect-2 {
+.contact .title-effect-2,.career .title-effect-2 {
     grid-column: 1;
     grid-row: 1;
+    margin: 0;
+}
+
+.title-effect-2 {
+    margin: auto;
 }
 
 .la-info:before {
@@ -56,6 +72,11 @@
 
 .contact-media {
     border-bottom: 3px solid #f90;
+    padding: 30px 20px;
+}
+
+.contact-media:hover {
+    border-bottom: 3px solid #036;
 }
 
 .contact-media span {
@@ -68,21 +89,46 @@
     text-decoration: none;
 }
 
+.contact-media p{
+	font-size: 14px;
+}
+
+.form .form-title{
+	position: relative;
+}
+
+.form-title .sub-heading{
+	padding-top: 30px;
+    line-height: 1.5;
+}
+
+.form-title .title-effect .bar{
+	background: #f90;
+}
+
+.form-title .title-effect {
+    top: -8px;
+}    
+
 @media (min-width: 768px) {
-    .wrapper .content .contact-info {
+    .wrapper .content .contact-info,.content .form-area {
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 25px;
         padding: 40px 60px;
     }
 
-    .wrapper {
+    .wrapper.contact {
         grid-row-gap: 0px;
     }
 
     .contact-media.last{
     	grid-column: span 2;
     }
+
+    .wrapper .content,.content .form-area,.wrapper{
+	grid-row-gap: 40px;
+	}
 }
 
 

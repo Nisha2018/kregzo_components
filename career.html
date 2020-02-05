@@ -13,14 +13,39 @@
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="heading.css">
     <link rel="stylesheet" href="contact.css">
+    <style>
+    .career .content {
+        text-align: center;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .career .content .msg span{
+        font-size: 30px;
+    }
+
+    .content span{
+        font-size: 25px;
+    }
+
+    .career .content .msg img{
+        width: 150px;
+    }
+
+    .wrapper.career{
+        grid-row-gap: 60px;
+    }
+    </style>
 </head>
 
 <body>
-    <div class="wrapper p-all">
+    <div class="wrapper career p-all">
         <div class="bg-animation">
             <img class="zoom-fade" src="images/03.png" alt="">
         </div>
@@ -31,7 +56,14 @@
             </div>
         </div>
         <div class="content">
-            
+            <div class="msg">
+                <div><span>Sorry, no jobs available at the moment :(</span></div>
+                <!-- <div><img src="images/emoji.png"></div> -->
+            </div>
+            <div>
+               <img src="images/noresult.png">
+            </div>
+            <div><span>Please check back in later!</span></div>
         </div>
     </div>
 </body>
