@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Dashboard</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="heading.css">
+    <style>
+
+    .container {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+    }
+
+    .sidebar{
+        position: fixed;
+        width: 250px;
+        height: 500px;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+    }
+
+    .main-content{
+        width: 750px;
+        height: 300vh;
+        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+    }
+
+
+    @media (min-width: 991px) {
+        .container {
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: auto;
+            padding: 30px;
+        }
+
+        .sidebar.right{
+            grid-column: 3;
+        }
+        .sidebar.left{
+            grid-column: 1;
+        }
+
+        .main-content{
+            grid-column: 2;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar left">1</div>
+        <div class="main-content">2</div>
+        <div class="sidebar right">3</div>
+    </div>
+</body>
+
+</html>

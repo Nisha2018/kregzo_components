@@ -5,10 +5,13 @@ body{
 .main-heading,.heading-2,.heading-1{
 	font-size: 40px;
 	font-weight: 600;
-	/*font-family: 'Cabin', sans-serif;*/
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Cabin', sans-serif;
 	color: #036;
 	text-align: center;
+}
+
+.main-heading{
+	font-family: 'Nunito', sans-serif;
 }
 
 .heading-1{
@@ -24,6 +27,15 @@ body{
 .p-all{
 	padding: 40px 20px;
 }
+
+.color-1{
+	color: #f90;
+}
+
+.color-2{
+	color: #036;
+}
+
 
 @media screen and (min-width: 800px){
 .p-all{

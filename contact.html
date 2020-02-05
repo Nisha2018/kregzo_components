@@ -8,6 +8,8 @@
     <title>Contact Us</title>
     <!--== fontawesome -->
     <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <!--== bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
@@ -21,58 +23,100 @@
 </head>
 
 <body>
-    <div class="wrapper contact p-all">
-        <div class="bg-animation">
-            <img class="zoom-fade" src="images/03.png" alt="">
-        </div>
-        <div class="head">
-            <p class="main-heading">Contact Us</p>
-            <div class="title-effect title-effect-2">
-                <div class="ellipse"></div><!-- <i class="fab fa-connectdevelop"></i> -->
-                <i class="fas fa-phone-alt"></i>
-            </div>
-        </div>
-        <div class="content">
-            <div class="contact-info">
-                <div class="contact-media">
-                    <i class="flaticon-paper-plane"></i>
-                    <span>Address:</span>
-                    <p>403, Al Ameri Tower,
-                        Barsha Heights
-                        Dubai, United Arab Emirates</p>
-                </div>
-                <div class="contact-media">
-                    <i class="flaticon-email"></i>
-                    <span>Email Address</span>
-                    <a href="mailto:info@kregzo.com">info@kregzo.com</a>
-                </div>
-                <div class="contact-media last">
-                    <i class="flaticon-social-media"></i>
-                    <span>Phone Number</span>
-                    <a href="tel:+971 4 2765804">+97-142765804</a>
-                </div>
-            </div>
-            <div class="form-area">
-                <div class="img-container">
-                    <img class="img-center" src="images/contact.png" alt="">
-                </div>
-                <div class="form">
-                    <div class="form-title">
-                        <div class="title-effect">
-                            <div class="bar bar-top"></div>
-                            <div class="bar bar-right"></div>
-                            <div class="bar bar-bottom"></div>
-                            <div class="bar bar-left"></div>
+    <div class="main-container p-all">
+        <!--header start-->
+        <header id="site-header" class="header">
+            <div class="container">
+                <div id="header-wrap">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!-- Navbar -->
+                            <nav class="navbar navbar-expand-lg">
+                                <a class="navbar-brand logo" href="/">
+                                    <img id="logo-img" class="img-center" src="images/logo-kregzo.png" alt="">
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <!-- Left nav -->
+                                    <ul id="main-menu" class="nav navbar-nav ml-auto mr-auto">
+                                        <li class="nav-item"> <a class="nav-link active" href="#home">Home</a>
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#about">About</a>
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#mentor">Team</a>
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#blog">Blog</a>
+                                        </li>
+                                        <li class="nav-item"> <a class="nav-link" href="#contact">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a class="btn btn-orange btn-sm" href="https://kregzo.com/account/login" data-text="Login"> <span>L</span><span>o</span><span>g</span><span>i</span><span>n</span>
+                                </a>
+                                <a class="btn btn-white btn-sm" href="https://kregzo.com/account/register" data-text="Register"> <span>R</span><span>e</span><span>g</span><span>i</span><span>s</span><span>t</span><span>e</span><span>r</span>
+                                </a>
+                            </nav>
                         </div>
-                        <p class="heading-1">Stay Connected</p>
-                        <p class="sub-heading">Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.</p>
                     </div>
-                    <form>
-                    </form>
+                </div>
+            </div>
+        </header>
+        <!--header end-->
+        <div class="wrapper contact">
+            <div class="bg-animation">
+                <img class="zoom-fade" src="images/03.png" alt="">
+            </div>
+            <div class="head">
+                <p class="main-heading">Contact Us</p>
+                <div class="title-effect title-effect-2">
+                    <div class="ellipse"></div><!-- <i class="fab fa-connectdevelop"></i> -->
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+            </div>
+            <div class="content">
+                <div class="contact-info">
+                    <div class="contact-media">
+                        <i class="flaticon-paper-plane"></i>
+                        <span>Address:</span>
+                        <p>403, Al Ameri Tower,
+                            Barsha Heights
+                            Dubai, United Arab Emirates</p>
+                    </div>
+                    <div class="contact-media">
+                        <i class="flaticon-email"></i>
+                        <span>Email Address</span>
+                        <a href="mailto:info@kregzo.com">info@kregzo.com</a>
+                    </div>
+                    <div class="contact-media last">
+                        <i class="flaticon-social-media"></i>
+                        <span>Phone Number</span>
+                        <a href="tel:+971 4 2765804">+97-142765804</a>
+                    </div>
+                </div>
+                <div class="form-area">
+                    <div class="img-container">
+                        <img class="img-center" src="images/contact.png" alt="">
+                    </div>
+                    <div class="form">
+                        <div class="form-title">
+                            <div class="title-effect">
+                                <div class="bar bar-top"></div>
+                                <div class="bar bar-right"></div>
+                                <div class="bar bar-bottom"></div>
+                                <div class="bar bar-left"></div>
+                            </div>
+                            <p class="heading-1">Stay Connected</p>
+                            <p class="sub-heading">Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.</p>
+                        </div>
+                        <form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 

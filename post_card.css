@@ -100,6 +100,14 @@ img {
     -ms-transition: all 0.5s ease-in-out 0s;
     -o-transition: all 0.5s ease-in-out 0s;
     transition: all 0.5s ease-in-out 0s;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+}
+
+.post .post-desc .post-title {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 30px;
 }
 
 .list-inline {
@@ -159,19 +167,48 @@ img {
     color: #1c1d3e;
 }
 
-.post .post-desc p,.media-body .text {
-    margin: 15px 0;
-    font-size: 14px;
+.post .post-desc p,
+.media-body .text {
+    margin: 8px 0;
+    font-size: 15px;
     color: #828893;
-    line-height: 1.7;
+    line-height: 1.4;
+    font-weight: 100;
 }
 
-.media-body .text{
+.post .post-desc p{
+    font-size: 17px;
+}
+
+.media {
+    position: relative;
+    margin: 20px 0px;
+}
+
+.media::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #dad9d9;
+    width: 100%;
+    height: 1px;
+}
+
+.media-body .text {
     margin: 0;
 }
 
-.media-holder .media{
-    padding-top: 20px;
+.media-holder .media {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 35px;
+}
+
+.media-holder .media img {
+    -webkit-box-shadow: 0 3px 20px 0 rgba(28, 30, 35, 0.2);
+    -moz-box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2);
 }
 
 .icon-btn {
@@ -229,14 +266,14 @@ img {
 
 .widget-tags li {
     display: inline-block;
-    margin: 5px 5px 15px 0;
+    margin: 5px 5px 4px 0;
 }
 
 .widget-tags li a {
     background: #fafaff;
     border-radius: 5px;
     color: #036;
-    padding: 8px 15px;
+    padding: 7px 8px;
     display: inline-block;
     text-align: center;
     font-weight: normal;
@@ -254,7 +291,9 @@ a {
 .btn.btn-theme {
     background: linear-gradient(90deg, rgb(255, 81, 47) 0%, rgb(240, 152, 25) 80%);
     cursor: pointer;
-    padding: 17px 25px;
+    padding: 16px 15px;
+    font-size: 15px;
+    letter-spacing: 2px;
 }
 
 .btn::before {
@@ -264,35 +303,78 @@ a {
 .comments {
     display: grid;
     grid-template-rows: auto auto;
-}
-
-.comments p.title {
-    color: #036;
-    font-size: 20px;
-    font-weight: bold;
+    grid-row-gap: 20px;
+    padding-top: 30px;
 }
 
 .comments .form-control {
     padding: 0px 15px;
     width: 90%;
-    margin-bottom: 15px;
+    margin-bottom: 0;
 }
 
 .post .post-desc {
     padding-bottom: 60px;
 }
 
-.section-title h2 {
-    font-size: 20px;
+.section-title .heading-2,
+.comments p.title {
+    font-size: 24px;
     font-weight: bold;
+    font-family: 'Cabin', sans-serif;
+    color: #036;
 }
 
 .section-title {
     margin-bottom: 0;
+    position: relative;
+    background: #036;
+    padding: 14px 18px;
+    border-radius: 5px;
+    display: grid;
+    cursor: pointer;
+}
+
+.section-title .heading-2 {
+    color: #fff;
+    font-size: 20px;
 }
 
 .media-holder {
     padding-top: 30px;
+}
+
+.media-holder .section-title label::after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.media-holder .media {
+    display: none;
+}
+
+.media:last-child::after {
+    width: 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+#toggle:checked~.media {
+    display: grid;
+}
+
+#toggle:checked~.section-title label[for="toggle"]:after {
+    content: "\f106";
+    top: -4;
 }
 
 .comment-date {
@@ -300,8 +382,12 @@ a {
     font-size: 10px;
 }
 
-.comment-date .time{
+.comment-date .time {
     padding-left: 30px;
+}
+
+.comments .title i{
+    padding-right: 5px;
 }
 
 .media-body .name {
@@ -314,9 +400,28 @@ a {
     vertical-align: middle;
 }
 
+.comments form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
 .media-holder .media img {
     width: 60px;
+}
+
+.post .post-desc {
+    padding: 50px 50px 60px;
+}
+
+
+@media (max-width: 699px) {
+    .comments form {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto;
+        grid-row-gap: 15px;
     }
+}
 
 @media (min-width: 991px) {
     .comments .form-control {
@@ -340,9 +445,25 @@ a {
         font-size: 18px;
     }
 
+    .post .post-desc {
+        padding: 30px 20px 60px;
+    }
+
     .media-holder .media {
-        display: block;
+        grid-template-columns: auto;
         padding: 20px 10px;
+    }
+
+    .section-title .heading-2 {
+        font-size: 18px;
+    }
+
+    .media-holder .section-title label::after {
+        font-size: 24px;
+    }
+
+    .widget-tags li {
+        font-size: 12px;
     }
 }
 
@@ -351,10 +472,6 @@ a {
     .post-meta ul li {
         font-size: 12px;
         margin: 0 10px 0 0;
-    }
-
-    .post .post-desc {
-        padding: 20px 20px 60px;
     }
 
     .post-title::before {

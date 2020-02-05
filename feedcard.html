@@ -11,15 +11,33 @@
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="post_card.css">
     <link rel="stylesheet" href="contribution_card.css">
+    <link rel="stylesheet" href="heading.css">
     <style>
         input[type="checkbox"]{
             display: none;
         }
 
-        .post-desc .text label[for="toggle"]{
+        .container{
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-row-gap: 30px;
+        }
+
+        .container .heading p{
+            line-height: 1.4;
+            font-size: 20px;
+        }
+
+        .container .heading p a:hover{
+            color: #f90;
+            text-decoration: underline;
+        }
+
+        .post-desc .text label[for="more"]{
             color: #f90;
             font-weight: 500;
             font-size: 14px;
@@ -32,6 +50,9 @@
 
         .post .post-desc .sub-title p{
             color: #036;
+            font-size: 25px;
+            font-family: 'Cabin', sans-serif;
+            padding: 20px 0px;
         }
 
         .hide{
@@ -41,21 +62,21 @@
             transition: 0.1s ease;
         }
 
-        #toggle:checked ~ .show .hide{
+        #more:checked ~ .show .hide{
             opacity: 1;
             font-size: inherit;
             max-height: 999em;
         }
 
-        #toggle:checked ~ .show .ellipsis{
+        #more:checked ~ .show .ellipsis{
             display: none;
         }
 
-        #toggle ~ .read-more-trigger:before{
+        #more ~ .read-more-trigger:before{
             content: "Read More";
         }
 
-        #toggle:checked ~ .read-more-trigger:before{
+        #more:checked ~ .read-more-trigger:before{
             content: "Read Less";
         } 
 
@@ -65,11 +86,18 @@
         font-weight: bold;
         }
 
-        .post-desc .img-container{
-            width: 50px;
-            height: 50px;
+        .post .title a:hover{
+            color: #f90;
+            cursor: pointer;
+        }
+
+        .post-desc .img-container,.post-desc .img-container img{
+            width: 60px;
+            height: 60px;
             background: #e5dede;
             border-radius: 50%;
+            -webkit-box-shadow: 0 3px 20px 0 rgba(28, 30, 35, 0.2);
+    -moz-box-shadow: 0 20px 40px 0 rgba(28, 30, 35, 0.2);
         }
 
         .time i{
@@ -115,68 +143,95 @@
             margin-left: 20px;
         }
 
+        @media (max-width: 576px){
+            .post .post-desc .sub-title p {
+                font-size: 16px;
+            }
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="post">
-        <div class="post-desc">
-            <div class="head">
-                <div class="img-container">
-                    <img src="">
-                </div>
-                <div class="title">
-                    <a href="#">
-                        Member
-                    </a>
-                </div>
-            </div>
-            <div class="sub-title">
-                <p>Enhance the support provided by the Caretaker of timer's patient</p>
-            </div>
-            <div class="time">
-                <p><i class="far fa-clock"></i> a year ago</p>
-            </div>
-            <div class="post-title"></div>
-            <div class="text">
-                <input type="checkbox" name="toggle" id="toggle">
-                <p class="show">Member is a healthcare initiative consisting of three main products: 1. A smart wearable to assist dementia patients in carrying out everyday tasks a<span class="ellipsis">...</span>
-                    <span class="hide">and have fun while they do it together with family and friends. We give you everything required for amazingly fun experiences at a fraction of the cost of ownership while reducing dependence on wasteful things you do not need regularly.</span>
-                </p>
-                <label for="toggle" class="read-more-trigger"></label>
-                <div class="like-btn">
-                    <div>
-                        <span><i class="fas fa-dollar-sign"></i> Interested to buy the product?</span>
+    <div class="container">
+        <div class="heading">
+            <p> <a href="" class="color-2">Mridul</a> has started working on new idea <a href="" class="color-2">member</a> under the topic <span class="color-1">Artificial Intelligence</span></p>
+        </div>
+        <div class="post">
+            <div class="post-desc">
+                <div class="head">
+                    <div class="img-container">
+                        <img src="images/feed.jpg">
                     </div>
-                    <input type="checkbox" name="like" id="like">
-                    <label for="like"><i class="fas fa-heart"></i><span>4</span>
-                </div></label>
-            </div>
-            <div class="media-holder mt-5">
-                <div class="section-title mb-4">
-                    <h2 class="title">All Comments<span>(0)</span></h2>
-                </div>
-                <div class="media">
-                    <img class="img-center mr-3" alt="image" src="images/comment.png">
-                    <div class="media-body">
-                        <span class="name">Romi kelly</span>
-                        <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
-                        <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
+                    <div class="title">
+                        <a href="#">
+                            Member
+                        </a>
                     </div>
                 </div>
-            
+                <div class="sub-title">
+                    <p class="heading-2">Enhance the support provided by the Caretaker of timer's patient</p>
+                </div>
+                <div class="time">
+                    <p><i class="far fa-clock"></i> a year ago</p>
+                </div>
+                <div class="post-title"></div>
+                <div class="text">
+                    <input type="checkbox" name="more" id="more">
+                    <p class="show">Member is a healthcare initiative consisting of three main products: 1. A smart wearable to assist dementia patients in carrying out everyday tasks a<span class="ellipsis">...</span>
+                        <span class="hide">and have fun while they do it together with family and friends. We give you everything required for amazingly fun experiences at a fraction of the cost of ownership while reducing dependence on wasteful things you do not need regularly.</span>
+                    </p>
+                    <label for="more" class="read-more-trigger"></label>
+                    <div class="like-btn">
+                        <div>
+                            <a href="" class="color-2"><i class="fas fa-dollar-sign"></i> Interested to buy the product?</a>
+                        </div>
+                        <input type="checkbox" name="like" id="like">
+                        <label for="like"><i class="fas fa-heart"></i><span>4</span>
+                    </div></label>
+                </div>
+                <div class="media-holder mt-5">
+                    <input type="checkbox" name="tab1" id="toggle" checked="true">
+                    <div class="section-title mb-4">
+                        <label for="toggle" class="heading-2">All Comments<span>(0)</span></label>
+                    </div>
+                    <div class="media">
+                        <img class="img-center mr-3" alt="image" src="images/comment.png">
+                        <div class="media-body">
+                            <span class="name">Romi kelly</span>
+                            <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
+                            <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img class="img-center mr-3" alt="image" src="images/comment.png">
+                        <div class="media-body">
+                            <span class="name">Amber Lony</span>
+                            <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
+                            <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
+                        </div>
+                    </div>
+                    <div class="media">
+                        <img class="img-center mr-3" alt="image" src="images/comment.png">
+                        <div class="media-body">
+                            <span class="name">Amber Lony</span>
+                            <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
+                            <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments">
+                    <p class="title"><i class="far fa-edit"></i>Leave a comment</p>
+                    <form method="post" action="">
+                        <input type="text" name="comment" class="form-control" placeholder="Enter your comment..." required="required">
+                        <button class="btn btn-theme mt-5" data-text="Post Comment"><span>P</span><span>o</span><span>s</span><span>t</span>
+                            <span> </span><span>C</span><span>o</span><span>m</span><span>m</span><span>e</span><span>n</span><span>t</span>
+                        </button>
+                    </form>
+                </div>
+                <a class="icon-btn mt-4" href="#"> <i class="fas fa-angle-right"></i>
+                </a>
             </div>
-            <div class="comments">
-                <p class="title">Leave a comment</p>
-                <form method="post" action="">
-                    <input type="text" name="comment" class="form-control" placeholder="Enter your comment..." required="required">
-                    <button class="btn btn-theme mt-5" data-text="Post Comment"><span>P</span><span>o</span><span>s</span><span>t</span>
-                        <span> </span><span>C</span><span>o</span><span>m</span><span>m</span><span>e</span><span>n</span><span>t</span>
-                    </button>
-                </form>
-            </div>
-            <a class="icon-btn mt-4" href="#"> <i class="fas fa-angle-right"></i>
-            </a>
         </div>
     </div>
 </body>
