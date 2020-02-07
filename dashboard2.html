@@ -18,63 +18,67 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="heading.css">
     <style>
-    body {
-        margin: 0;
-        padding: 0 250px 0 250px;
-    }
-
-    div#left-sidebar {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 250px;
-        height: 100%;
-        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-    }
-
-    div#right-sidebar {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 250px;
-        height: 100%;
-        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-    }
-
-    #content {
-        width: 800px;
-        height: 300vh;
-        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-        margin: auto;
-    }
-
-    @media screen {
-        body>div#left-sidebar {
-            position: fixed;
+    @media (min-width: 768px) {
+        body {
+            margin: 0;
+            padding: 0 250px 0 250px;
         }
 
-        body>div#right-sidebar {
-            position: fixed;
+        div#left-sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        }
+
+        div#right-sidebar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 250px;
+            height: 100%;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+        }
+
+        #content {
+            width: 800px;
+            height: 300vh;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+            margin: 30px auto;
+        }
+
+        @media screen {
+            body>div#left-sidebar {
+                position: fixed;
+            }
+
+            body>div#right-sidebar {
+                position: fixed;
+            }
+        }
+
+        * html body {
+            overflow: hidden;
+        }
+
+        * html div#content {
+            width: 750px;
+            height: 300vh;
+            overflow: auto;
+            box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
         }
     }
 
-    * html body {
-        overflow: hidden;
-    }
-
-    * html div#content {
-        width: 750px;
-        height: 300vh;
-        overflow: auto;
-        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-    }
+    
     </style>
 </head>
 
 <body>
     <div id="left-sidebar"> left-sidebar </div>
-    <div id="right-sidebar"> right-sidebar </div>
     <div id="content"> content </div>
+    <div id="right-sidebar"> right-sidebar </div>
 </body>
 
 </html>

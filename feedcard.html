@@ -57,7 +57,7 @@
 
         .hide{
             opacity: 0;
-            max-height: 0;
+            min-height: 0;
             font-size: 0;
             transition: 0.1s ease;
         }
@@ -65,7 +65,7 @@
         #more:checked ~ .show .hide{
             opacity: 1;
             font-size: inherit;
-            max-height: 999em;
+            min-height: auto;
         }
 
         #more:checked ~ .show .ellipsis{
@@ -153,9 +153,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container feed">
         <div class="heading">
-            <p> <a href="" class="color-2">Mridul</a> has started working on new idea <a href="" class="color-2">member</a> under the topic <span class="color-1">Artificial Intelligence</span></p>
+            <p> <i class="far fa-lightbulb color-1"></i><a href="" class="color-2">Mridul</a> has started working on new idea <a href="" class="color-2">member</a> under the topic <span class="color-1">Artificial Intelligence</span></p>
         </div>
         <div class="post">
             <div class="post-desc">
@@ -191,44 +191,44 @@
                     </div></label>
                 </div>
                 <div class="media-holder mt-5">
-                    <input type="checkbox" name="tab1" id="toggle" checked="true">
-                    <div class="section-title mb-4">
-                        <label for="toggle" class="heading-2">All Comments<span>(0)</span></label>
-                    </div>
-                    <div class="media">
-                        <img class="img-center mr-3" alt="image" src="images/comment.png">
-                        <div class="media-body">
-                            <span class="name">Romi kelly</span>
-                            <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
-                            <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <img class="img-center mr-3" alt="image" src="images/comment.png">
-                        <div class="media-body">
-                            <span class="name">Amber Lony</span>
-                            <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
-                            <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <img class="img-center mr-3" alt="image" src="images/comment.png">
-                        <div class="media-body">
-                            <span class="name">Amber Lony</span>
-                            <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
-                            <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
-                        </div>
+                <div class="section-title mb-4">
+                    <span class="heading-2"><i class="fas fa-comments"></i>Comments</span>
+                </div>
+                <div class="media">
+                    <img class="img-center mr-3" alt="image" src="images/comment.png">
+                    <div class="media-body">
+                        <span class="name">Romi kelly</span>
+                        <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
+                        <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
                     </div>
                 </div>
-                <div class="comments">
-                    <p class="title"><i class="far fa-edit"></i>Leave a comment</p>
-                    <form method="post" action="">
-                        <input type="text" name="comment" class="form-control" placeholder="Enter your comment..." required="required">
-                        <button class="btn btn-theme mt-5" data-text="Post Comment"><span>P</span><span>o</span><span>s</span><span>t</span>
-                            <span> </span><span>C</span><span>o</span><span>m</span><span>m</span><span>e</span><span>n</span><span>t</span>
-                        </button>
-                    </form>
+                <div class="media">
+                    <img class="img-center mr-3" alt="image" src="images/comment.png">
+                    <div class="media-body">
+                        <span class="name">Amber Lony</span>
+                        <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
+                        <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
+                    </div>
                 </div>
+                <div class="media">
+                    <img class="img-center mr-3" alt="image" src="images/comment.png">
+                    <div class="media-body">
+                        <span class="name">Amber Lony</span>
+                        <div class="comment-date">23 April, 2019<span class="time">7:56 PM</span></div>
+                        <span class="text">Seuismod dissentiunt ne sit, ad eos iudico qualisque adversarium, tota falli et mei.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-show"><a href="#" class="btn btn-theme">Show All</a></div>
+            <div class="comments">
+                <p class="title"><i class="far fa-edit"></i>Leave a comment</p>
+                <form method="post" action="">
+                    <input type="text" name="comment" class="form-control" placeholder="Enter your comment..." required="required">
+                    <button class="btn btn-theme mt-5" data-text="Post Comment"><span>P</span><span>o</span><span>s</span><span>t</span>
+                        <span> </span><span>C</span><span>o</span><span>m</span><span>m</span><span>e</span><span>n</span><span>t</span>
+                    </button>
+                </form>
+            </div>
                 <a class="icon-btn mt-4" href="#"> <i class="fas fa-angle-right"></i>
                 </a>
             </div>
