@@ -206,7 +206,7 @@ img {
 
 .media.inner {
     background: #fafaff;
-    margin: 20px 0px 20px 80px;
+    margin: 20px 0px 20px 2px;
 }    
 
 .media-body .text {
@@ -276,6 +276,16 @@ img {
 
 .post .post-desc h4 a:hover {
     color: #f90;
+}
+
+.widget-tags {
+    height: 45px;
+    overflow: hidden;
+}
+
+#tags:checked ~ .widget-tags{
+    height: auto;
+    overflow: auto;
 }
 
 .widget-tags li {
