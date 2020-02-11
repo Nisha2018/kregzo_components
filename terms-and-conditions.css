@@ -13,6 +13,10 @@
     border-radius: 1rem;
 }
 
+.wrapper.terms,.wrapper.privacy{
+	top: 115px;
+}
+
 .card section{
 	padding-bottom: 20px;
 }
