@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../heading.css">
+    <link rel="stylesheet" href="../post_card.css">
+    <style>
+    .wrapper {
+        padding: 20px;
+    }
+
+    .icon-btn:hover {
+        background: #f90;
+    }
+
+    .ideas .follow .btn {
+        background: #f90;
+        color: #fff;
+        padding: 15px 20px;
+        text-decoration: none;
+        letter-spacing: 2px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin: 25px 0px 15px;
+        font-size: 16px;
+    }
+
+    .ideas p {
+        color: #5F5F5F;
+        font-weight: normal;
+        line-height: 1.4;
+    }
+
+    .featured-desc p {
+        font-size: 18px;
+    }
+
+    .widget-tags li a {
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+    .featured-item.style-2 {
+        box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
+        -webkit-box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-row-gap: 20px;
+        padding: 20px 15px;
+    }
+
+    .featured-item.style-2 .info,
+    .featured-item.style-2 .profile {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .profile img {
+        width: 60px;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 3px 20px 0 rgba(28, 30, 35, 0.2);
+    }
+
+    .profile .profile-info {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
+
+    .profile .profile-info .name span,
+    .percent p {
+        color: #036;
+        cursor: pointer;
+    }
+
+    .progress-bar {
+        background: #e4e4ea;
+        width: 100%;
+        height: 7px;
+        border-radius: 25px;
+    }
+
+    .active{
+        background: #f90;
+    }
+
+    @media (min-width: 768px) {
+
+        .featured-item.style-2 .info,
+        .featured-item.style-2 .profile {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+
+        .featured-item.style-2 {
+            padding: 60px 30px;
+        }
+
+        .featured-item.style-2 .info .percent,
+        .profile .follow {
+            justify-self: end;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="featured-item style-2 ideas">
+            <div class="title">
+                <span class="heading-1">Elo Trips</span>
+            </div>
+            <div class="info">
+                <div class="date">
+                    <p>Started on May 10, 2018</p>
+                </div>
+                <div class="percent">
+                    <p>15% done</p>
+                </div>
+            </div>
+            <div class="progress-bar">
+            </div>
+            <div class="featured-desc">
+                <p>We are a travel company and our goal is to make travel effortless and economical.</p>
+            </div>
+            <ul class="widget-tags list-inline">
+                <li> <a>Travel &amp; Tourism</a>
+                </li>
+            </ul>
+            <div class="profile">
+                <div class="profile-info">
+                    <img src="../images/comment.png">
+                    <div class="name">
+                        <p>Owner <span>Apurva Sonavane</span></p>
+                    </div>
+                </div>
+                <div class="follow">
+                    <button class="btn">View</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

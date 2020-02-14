@@ -13,33 +13,45 @@
     <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="heading.css">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../heading.css">
+    <link rel="stylesheet" href="../post_card.css">
     <style>
-        .wrapper{
-            padding: 20px;
-        }
+    .wrapper {
+        padding: 20px;
+    }
 
-        .team-member.style-3:after,.team-member.style-3:before{
-            background: #f90;
-        }
+    .team-member.style-3:after,
+    .team-member.style-3:before {
+        background: #f90;
+    }
 
+    .team-member.style-3 img {
+        border-radius: 0;
+    }
+
+    .widget-tags li a {
+        font-size: 14px;
+        cursor: pointer;
+    }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="team-member style-3">
-              <div class="team-images">
-                <img class="img-fluid radius box-shadow" src="images/team.jpg" alt="">
-              </div>
-              <div class="team-description"> <span>CEO at member</span>
-                <p class="heading-2 title color-1 text-center">Mridul Bhandari</p>
-
-                <p>Creator, Explorer, Contributor</p>
-                <p>Idea Owner</p>
-              </div>
+        <div class="team-member company style-3">
+            <div class="team-images">
+                <img class="img-fluid radius box-shadow" src="../images/team.jpg" alt="">
             </div>
+            <div class="team-description">
+                <p class="heading-2 title color-1 text-center">Member</p>
+                <p>Started on Apr 26, 2019</p>
+                <ul class="widget-tags list-inline">
+                    <li> <a>Healthcare</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 

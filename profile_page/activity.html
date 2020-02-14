@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Activity</title>
+    <!--== fontawesome -->
+    <link href="../css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../heading.css">
+    <style>
+    .wrapper {
+        padding: 20px;
+    }
+
+    .activity-group {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 35px;
+    }
+
+    .wrapper .activity {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: auto auto;
+        grid-column-gap: 35px;
+        align-items: center;
+        grid-row-gap: 10px;
+    }
+
+    .icon {
+        position: relative;
+        justify-self: center;
+    }
+
+    .time {
+        grid-column: 2;
+        color: #036;
+        font-weight: 500;
+    }
+
+    .info {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 10px;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .icon::after {
+        content: "";
+        position: absolute;
+        background: #f90;
+        width: 3px;
+        height: 200%;
+        top: 100%;
+        left: 50%;
+    }
+
+    .title-effect-2 .ellipse {
+        background: #f90;
+    }
+
+    .line {
+        background: #ebe5e5;
+        width: 100%;
+        height: 1px;
+        grid-column: 2;
+        position: relative;
+        margin-top: 5%;
+    }
+
+    .info p.heading {
+        font-size: 18px;
+        line-height: 22px;
+        font-family: 'Cabin', sans-serif;
+    }
+
+    .info p.heading span {
+        font-weight: 500;
+        color: #f90;
+    }
+
+    .btn.btn-theme.blue {
+        background: #036;
+        font-size: 16px;
+        padding: 13px 35px;
+    }
+
+
+
+    @media (min-width: 768px) {
+        .wrapper .activity {
+            grid-template-columns: 5fr 1fr 5fr;
+            grid-gap: 0;
+        }
+
+        .time {
+            grid-column: 3;
+        }
+
+        .info {
+            grid-column: 1;
+            justify-content: center;
+        }
+
+        .line {
+            grid-column: 1;
+            grid-row: 1;
+            margin-top: 20%;
+        }
+
+        .activity.alternate .time {
+            grid-column: 1;
+            grid-row: 1;
+            text-align: right;
+        }
+
+        .activity.alternate .info {
+            grid-column: 3;
+        }
+
+        .activity.alternate .line {
+            grid-column: 3;
+        }
+
+        .activity-group .load {
+            justify-self: center;
+        }
+
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="activity-group">
+            <div class="activity">
+                <!-- <span class="icon">1</span> -->
+                <div class="title-effect title-effect-2 icon">
+                    <div class="ellipse"></div> <i class="fas fa-bolt"></i>
+                </div>
+                <div class="time">
+                    <p>6 hours ago</p>
+                </div>
+                <div class="info">
+                    <p>unfollowed idea</p>
+                    <p class="heading">UnFollowed Idea</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="activity alternate">
+                <!-- <span class="icon">1</span> -->
+                <div class="title-effect title-effect-2 icon">
+                    <div class="ellipse"></div> <i class="fas fa-user-plus"></i>
+                </div>
+                <div class="time">
+                    <p>6 hours ago</p>
+                </div>
+                <div class="info">
+                    <p>followed user</p>
+                    <p class="heading">Lana followed <span>Mridul Bhandari</span></p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="activity">
+                <!-- <span class="icon">1</span> -->
+                <div class="title-effect title-effect-2 icon">
+                    <div class="ellipse"></div> <i class="fas fa-bolt"></i>
+                </div>
+                <div class="time">
+                    <p>6 hours ago</p>
+                </div>
+                <div class="info">
+                    <p>unfollowed idea</p>
+                    <p class="heading">UnFollowed Idea</p>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="load">
+                <button class="btn btn-theme blue" data-text="Load More"><span>L</span><span>o</span><span>a</span><span>d</span>
+                    <span> </span><span>M</span><span>o</span><span>r</span><span>e</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

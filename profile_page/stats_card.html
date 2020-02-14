@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../heading.css">
+    <style>
+    .wrapper {
+        padding: 20px;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        grid-row-gap: 20px;
+    }
+
+    .stats .counter {
+        box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
+         -webkit-box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .stats .counter .counter-desc .title {
+        color: #5f5f5f;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .stats .counter .count-number {
+        color: #f90;
+    }
+
+    @media (min-width: 991px) {
+        .stats {
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 40px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="stats">
+            <div class="counter">
+                <div class="counter-icon">
+                    <img class="img-center" src="../images/stats.png" alt="">
+                </div>
+                <div class="counter-desc">
+                    <span class="count-number" data-to="30" data-speed="10000">30</span>
+                    <p class="title">Ideas in development</p>
+                </div>
+            </div>
+            <div class="counter">
+                <div class="counter-icon">
+                    <img class="img-center" src="../images/stats.png" alt="">
+                </div>
+                <div class="counter-desc">
+                    <span class="count-number" data-to="30" data-speed="10000">30</span>
+                    <p class="title">Followers for your profile</p>
+                </div>
+            </div>
+            <div class="counter">
+                <div class="counter-icon">
+                    <img class="img-center" src="../images/stats.png" alt="">
+                </div>
+                <div class="counter-desc">
+                    <span class="count-number" data-to="30" data-speed="10000">30</span>
+                    <p class="title">Ideas in development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
