@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>Document</title>
+    <!--== fontawesome -->
+    <link href="css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/shortcodes.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://nisha2018.github.io/kregzo/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../heading.css">
+    <style>
+    .stats-bg .heading-2 {
+        padding: 30px;
+    }
+
+    .stats {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto;
+        grid-row-gap: 50px;
+    }
+
+    .stats-desc p {
+        color: #1c1d3e;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+    }
+
+    .stats-desc .count-number {
+        color: #f90;
+        font-size: 40px;
+    }
+
+    .stats-bg {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-row-gap: 40px;
+    }
+
+    @media (min-width: 767px) {
+        .stats {
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+        }
+
+        .wrapper {
+            padding: 30px;
+        }
+
+        .stats-bg .heading-2 {
+            padding: 0px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="bg-contain sm-bg-cover stats-bg" data-bg-img="../images/stats2.png" style="background-image: url(&quot;../images/stats2.png&quot;);">
+            <div class="heading-2">
+                <p>Stats</p>
+            </div>
+            <div class="stats">
+                <div class="stats-info">
+                    <div class="counter style-4">
+                        <div class="counter-desc stats-desc">
+                            <span class="count-number">30</span>
+                            <p class="title">Ideas in development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-info">
+                    <div class="counter style-4">
+                        <div class="counter-desc stats-desc">
+                            <span class="count-number">18</span>
+                            <p class="title">Followers for your profile</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-info">
+                    <div class="counter style-4">
+                        <div class="counter-desc stats-desc">
+                            <span class="count-number">14</span>
+                            <p class="title">Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
