@@ -17,111 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../heading.css">
-    <style>
-    .company {
-        padding: 40px 30px 50px;
-    }
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    .company-card {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-row-gap: 40px;
-    }
-
-    .company-card .heading {
-        font-size: 40px;
-        color: #fff;
-        font-family: 'Cabin', sans-serif;
-        position: relative;
-    }
-
-    .title-effect.large {
-        width: 70px;
-        height: 70px;
-        top: -13px;
-    }
-
-    [data-overlay].grediant-overlay:before {
-        background: rgb(255, 81, 47);
-        background: linear-gradient(90deg, rgba(255, 81, 47, 1) 0%, rgba(0, 51, 102, 0.9) 80%);
-    }
-
-    .company-card .follow {
-        display: grid;
-        align-items: center;
-        grid-template-columns: auto auto;
-        grid-column-gap: 10px;
-        justify-content: start;
-    }
-
-    .company-card .follow .btn {
-        background: #f90;
-        color: #fff;
-        padding: 10px 15px;
-        text-decoration: none;
-        letter-spacing: 2px;
-        border-radius: 7px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-    .company-card .follow .follower p {
-        color: #fff;
-    }
-
-    .company-card .follow .btn i {
-        padding-right: 5px;
-    }
-
-    .company-card .section-title.head {
-        margin-bottom: 0px;
-    }
-
-    .about-card {
-        display: grid;
-        grid-template-rows: auto;
-        grid-row-gap: 10px;
-        justify-content: start;
-        box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
-        padding: 20px;
-        z-index: 99;
-        position: relative;
-        overflow: hidden;
-        background: #fff;
-        margin: -5% 30px;
-        border-radius: 6px;
-    }
-
-    .about-card .info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
-    }
-
-
-    @media (min-width: 767px) {
-        .company {
-            padding: 40px 80px;
-        }
-
-        .company-card {
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
-        }
-
-        .company-card .follow {
-            grid-column: 2;
-            grid-row: 1;
-            justify-self: end;
-        }
-
-        .about-card{
-            margin: -50px 20px 0px 40%;
-        }
-
-    }
-    </style>
 </head>
 
 <body>
@@ -150,40 +47,40 @@
         </div>
         <div class="about-card">
             <div class="info">
-                <div>
-                    <p>Date Founded</p>
+                <div class="title">
+                    <p>Date Founded:</p>
                 </div>
                 <div>
                     <p>2015-01-01</p>
                 </div>
             </div>
             <div class="info">
-                <div>
-                    <p>Industry Focus</p>
+                <div class="title">
+                    <p>Industry Focus:</p>
                 </div>
                 <div>
                     <p>Banking & Finance</p>
                 </div>
             </div>
             <div class="info">
-                <div>
-                    <p>Founders</p>
+                <div class="title">
+                    <p>Founders:</p>
                 </div>
                 <div>
                     <p>1</p>
                 </div>
             </div>
             <div class="info">
-                <div>
-                    <p>Team Members</p>
+                <div class="title">
+                    <p>Team Members:</p>
                 </div>
                 <div>
                     <p>10</p>
                 </div>
             </div>
             <div class="info">
-                <div>
-                    <p>Business Type</p>
+                <div class="title">
+                    <p>Business Type:</p>
                 </div>
                 <div>
                     <p>B2B</p>

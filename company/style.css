@@ -1,0 +1,241 @@
+.company {
+    padding: 40px 30px 50px;
+}
+
+.company-card {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 40px;
+}
+
+.company-card .heading {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Cabin', sans-serif;
+    position: relative;
+}
+
+.title-effect.large {
+    width: 70px;
+    height: 70px;
+    top: -13px;
+}
+
+[data-overlay].grediant-overlay:before {
+    background: rgb(255, 81, 47);
+    background: linear-gradient(90deg, rgba(255, 81, 47, 1) 0%, rgba(0, 51, 102, 0.9) 80%);
+}
+
+.company-card .follow {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    justify-content: start;
+}
+
+.company-card .follow .btn {
+    background: #f90;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.company-card .follow .follower p {
+    color: #fff;
+}
+
+.company-card .follow .btn i {
+    padding-right: 5px;
+}
+
+.company-card .section-title.head {
+    margin-bottom: 0px;
+}
+
+.about-card {
+    display: grid;
+    grid-template-rows: auto;
+    grid-row-gap: 10px;
+    justify-content: start;
+    box-shadow: 0px 0px 15px 0px rgba(72, 73, 121, 0.15);
+    padding: 20px;
+    z-index: 99;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    margin: -5% 30px;
+    border-radius: 6px;
+}
+
+.about-card .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+
+.about-card .info .title {
+    color: #036;
+}
+
+.about-card:before,
+.about-card:after {
+    content: "";
+    background: #f90;
+    border-radius: 7px;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.about-card:before {
+    top: 0;
+    left: 0;
+}
+
+.about-card:after {
+    bottom: 0;
+    right: 0;
+}
+
+.about-card:hover:before,
+.about-card:hover:after {
+    width: 30%;
+}
+
+.wrapper {
+    padding: 20px;
+}
+
+.about-info {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-row-gap: 20px;
+}
+
+.social-icons li a {
+    color: #036;
+}
+
+.social-icons li a:hover {
+    color: #f90;
+}
+
+.about-info .text {
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.about-info .social-links {
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto;
+    grid-row-gap: 15px;
+}
+
+.about-info .social-links .web {
+    color: #f90;
+}
+
+.about-info .title,
+.member-card .title {
+    position: relative;
+    color: #5f5f5f;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about-info .title::before,
+.member-card .title::before {
+    background-color: #f90;
+    width: 115px;
+    left: 0;
+}
+
+.about-info .title::after,
+.member-card .title::after {
+    background-color: #036;
+    width: 20px;
+    left: 120px;
+}
+
+.about-info .title::before,
+.about-info .title::after,
+.member-card .title::before,
+.member-card .title::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    height: 3px;
+    border-radius: 2px;
+    top: 140%;
+}
+
+.member-card {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 50px;
+}
+
+.member-card .team-description span.company-name {
+    color: #036;
+}
+
+.member-card .member-content {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    padding: 50px;
+}
+
+.team-member.style-3:before, .team-member.style-3:after{
+    background: #f90;
+}
+
+
+@media (min-width: 767px) {
+    .company {
+        padding: 40px 80px;
+    }
+
+    .company-card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .company-card .follow {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    .about-card {
+        margin: -50px 20px 0px 40%;
+    }
+
+    .about-info .social-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-info .social-links .social-icons {
+        justify-self: end;
+    }
+
+    .member-card .member-content {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 30px;
+    }
+
+}
