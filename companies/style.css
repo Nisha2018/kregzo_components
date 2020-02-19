@@ -59,7 +59,8 @@
      padding-right: 5px;
  }
 
- .featured-item.style-2 {
+ .featured-item.style-2,
+ .notify-card {
      box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
      -webkit-box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
      padding: 15px 25px 40px;
@@ -246,16 +247,112 @@
      -webkit-box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
  }
 
- .idea-single .card-head{
-    display: grid;
-    grid-template-columns: auto;
-    grid-row-gap: 15px;
+ .idea-single .card-head {
+     display: grid;
+     grid-template-columns: auto;
+     grid-row-gap: 15px;
  }
 
- .idea-single .card-head .desc p{
-    color: #036;
-    font-weight: 500;
-    font-size: 14px;
+ .idea-single .card-head .desc p {
+     color: #036;
+     font-weight: 500;
+     font-size: 14px;
+ }
+
+ .idea-single .card-head button {
+     border: 2px solid #f90;
+     color: #f90;
+     letter-spacing: 2px;
+     font-weight: 600;
+     padding: 10px 17px;
+     cursor: pointer;
+ }
+
+ .idea-single .card-head button:hover {
+     background: #f90;
+     color: #fff;
+ }
+
+ .idea-single .card-head .progress-bar .bar {
+     width: 100%;
+     height: 20px;
+     background: #ff990024;
+     border-radius: 4px;
+ }
+
+ .idea-single .card-head .progress-bar,
+ .idea-single .card-body {
+     display: grid;
+     grid-row-gap: 12px;
+ }
+
+ .idea-single {
+     display: grid;
+     grid-row-gap: 40px;
+ }
+
+ .idea-single .card-body {
+     grid-row-gap: 20px;
+ }
+
+ .idea-single .card-body .info {
+     grid-row-gap: 10px;
+ }
+
+ .notify-card .media-holder::after {
+     height: 0px;
+ }
+
+ .notify-card .notify {
+     display: grid;
+     padding-top: 0;
+     grid-row-gap: 20px;
+ }
+
+ .notify-card {
+     padding: 20px;
+ }
+
+ .notify-card .media-holder .media {
+     justify-content: start;
+     align-items: center;
+     padding: 0;
+     grid-row-gap: 5px;
+ }
+
+ .notify .comment-date {
+     font-size: 8px;
+     line-height: 1.4;
+     color: #5f5f5f;
+     grid-row: 2;
+ }
+
+ .notify-card .notify .media-body .name {
+     font-weight: 400;
+     font-size: 12px;
+ }
+
+ .notify-card .media-holder .media img {
+     width: 40px;
+ }
+
+ .notify .media .media-body .text {
+     font-size: 12px;
+ }
+
+ .notify .media .show a {
+     font-size: 12px;
+     color: #f90;
+     font-family: 'Cabin', sans-serif;
+ }
+
+ .notify-card .media-holder .media img {
+     box-shadow: none;
+ }
+
+ .notify .media .media-body {
+     display: grid;
+     grid-row-gap: 5px;
  }
 
 
