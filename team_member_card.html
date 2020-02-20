@@ -16,30 +16,89 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="heading.css">
     <style>
-        .wrapper{
-            padding: 20px;
-        }
+    .wrapper {
+        padding: 20px;
+    }
 
-        .team-member.style-3:after,.team-member.style-3:before{
-            background: #f90;
-        }
+    .member {
+        display: grid;
+        grid-template-rows: auto auto;
+        box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
+        -webkit-box-shadow: 0 1px 12px 0 rgba(183, 183, 183, .25);
+        padding: 40px;
+        justify-items: center;
+        align-items: center;
+        grid-row-gap: 30px;
+        border-radius: 7px;
+        position: relative;
 
+    }
+
+    .member .img-container img {
+        border-radius: 50%;
+    }
+
+    .member-info {
+        display: grid;
+        justify-items: center;
+        grid-row-gap: 10px;
+    }
+
+    .member-info .name {
+        font-size: 18px;
+    }
+
+    .member-info p {
+        font-size: 13px;
+    }
+
+    .member:before,
+    .member:after {
+        content: "";
+        background: #f90;
+        border-radius: 7px;
+        width: 0;
+        height: 5px;
+        position: absolute;
+         transition: all 0.5s linear;
+    }
+
+    .member:before{
+        top: 0;
+        left: 0;
+    }
+
+    .member:after{
+        bottom: 0;
+        right: 0;
+    }
+
+    .member:hover:before,
+    .member:hover:after {
+        width: 30%;
+    }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="team-member style-3">
-              <div class="team-images">
-                <img class="img-fluid radius box-shadow" src="images/team.jpg" alt="">
-              </div>
-              <div class="team-description"> <span>CEO at member</span>
-                <p class="heading-2 title color-1 text-center">Mridul Bhandari</p>
-
-                <p>Creator, Explorer, Contributor</p>
-                <p>Idea Owner</p>
-              </div>
+        <div class="member">
+            <div class="img-container">
+                <img class="img-fluid radius box-shadow" src="images/member.jpg" alt="">
             </div>
+            <div class="member-info">
+                <div><span>CEO at member</span></div>
+                <div>
+                    <p class="name heading-2 color-1">Mridul Bhandari</p>
+                </div>
+                <div>
+                    <p>Creator, Explorer, Contributor</p>
+                </div>
+                <div>
+                    <p>Idea Owner</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

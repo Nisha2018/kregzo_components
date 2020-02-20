@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Put your description here.">
+    <title>slider</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="location_slider.css">
+    <style>
+        .location{
+    box-shadow: 1px 4px 5px #dedbdb;
+    width: 280px;
+    height: 555px;
+    overflow: auto;
+    margin: 2rem;
+    border-radius: 20px;
+}
+
+.location .heading{
+    padding: 2rem 0 0rem 2rem;
+    font-family: Roboto Slab;
+    font-size: 2.4rem;
+}
+
+.location .options form label{
+    color: #888282;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*Radio button Styling*/
+.options input[type=radio] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+.options input[type=radio] {
+  display: none;
+}
+
+.options input[type=radio] + label:before {
+  content: "";
+  border: 0.15em solid #EB204A;
+  border-radius: 100%;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin: 0em 0.5em 0 1em;
+  vertical-align: middle;
+  color: transparent;
+  transition: .2s;
+}
+
+.options input[type=radio] + label:active:before {
+  transform: scale(0);
+}
+
+.options input[type=radio]:checked + label:before {
+  background-color: #EB204A;
+  border-color: #EB204A;
+}
+
+/*Ends*/
+
+/*Scrollbar styling*/
+
+.location::-webkit-scrollbar{
+  width: 15px;
+  }
+
+.location::-webkit-scrollbar-track{
+  /*border: 1px solid #bdb6b6;*/
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  margin: 30px 20px 30px 0;
+}
+
+.location::-webkit-scrollbar-thumb{
+  background: #EB204A;
+  height: 50px;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="location">
+        <div class="heading color-darkgrey font-bold font-20">
+            <p>Location</p>
+        </div>
+        <div class="options">
+            <form>
+                <input type="radio" id="city1" name="city">
+                <label for="city1">New Delhi</label>
+                <input type="radio" id="city2" name="city">
+                <label for="city2">Alipur</label>
+                <input type="radio" id="city3" name="city">
+                <label for="city3">Central Delhi</label>
+                <input type="radio" id="city4" name="city">
+                <label for="city4">West Delhi</label>
+                <input type="radio" id="city5" name="city">
+                <label for="city5">Dwarka</label>
+                <input type="radio" id="city6" name="city">
+                <label for="city6">Madhya Pradesh</label>
+                <input type="radio" id="city7" name="city">
+                <label for="city7">Uttar Pradesh</label>
+                <input type="radio" id="city8" name="city">
+                <label for="city8">Himachal Pradesh</label>
+                <input type="radio" id="city9" name="city">
+                <label for="city9">Jaipur</label>
+                <input type="radio" id="city10" name="city">
+                <label for="city10">Faridabad</label>
+                <input type="radio" id="city11" name="city">
+                <label for="city11">Surat</label>
+                <input type="radio" id="city12" name="city">
+                <label for="city12">Ahmedabad</label>
+                <input type="radio" id="city13" name="city">
+                <label for="city13">Himachal Pradesh</label>
+                <input type="radio" id="city14" name="city">
+                <label for="city14">Himachal Pradesh</label>
+                <input type="radio" id="city15" name="city">
+                <label for="city15">Himachal Pradesh</label>
+                <input type="radio" id="city16" name="city">
+                <label for="city16">Himachal Pradesh</label>
+                <input type="radio" id="city17" name="city">
+                <label for="city17">Himachal Pradesh</label>
+                <input type="radio" id="city18" name="city">
+                <label for="city18">Himachal Pradesh</label>
+                <input type="radio" id="city19" name="city">
+                <label for="city19">Himachal Pradesh</label>
+                <input type="radio" id="city20" name="city">
+                <label for="city20">Himachal Pradesh</label>
+                <input type="radio" id="city21" name="city">
+                <label for="city21">Himachal Pradesh</label>
+                <input type="radio" id="city22" name="city">
+                <label for="city22">Himachal Pradesh</label>
+                <input type="radio" id="city23" name="city">
+                <label for="city23">Himachal Pradesh</label>
+                <input type="radio" id="city24" name="city">
+                <label for="city24">Himachal Pradesh</label>
+                <input type="radio" id="city25" name="city">
+                <label for="city25">Himachal Pradesh</label>
+                <input type="radio" id="city26" name="city">
+                <label for="city26">Himachal Pradesh</label>
+                <input type="radio" id="city27" name="city">
+                <label for="city27">Himachal Pradesh</label>
+                <input type="radio" id="city28" name="city">
+                <label for="city28">Himachal Pradesh</label>
+                <input type="radio" id="city29" name="city">
+                <label for="city29">Himachal Pradesh</label>
+                <input type="radio" id="city30" name="city">
+                <label for="city30">Himachal Pradesh</label>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
